@@ -29,7 +29,7 @@ const Login = () => {
       });
       alert("Logged in successfully")
       localStorage.setItem('token', response.data.token);
-      window.location.href = '/send-email';
+      navigate("/send-email");
     } catch (error) {
       setError('Invalid username or password');
     }
